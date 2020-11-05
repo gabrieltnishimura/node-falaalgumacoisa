@@ -5,4 +5,5 @@ export interface FileInterface {
   readonly mimetype: string;
   readonly buffer: any;
   readonly size: number;
+  readonly path: string;
 }
