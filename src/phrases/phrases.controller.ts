@@ -28,9 +28,9 @@ export class PhrasesController {
   }
 
   @UseGuards(FirebaseAuthGuard)
-  @Post('theme/:theme')
-  addPhraseToGroup(@Param('theme') theme, @Body() payload: CreateThemeDto): Promise<PhrasesInterface> {
-    return this.phrasesService.createTheme({ ...payload, title: theme });
+  @Post('theme')
+  addPhraseToGroup(@Body() payload: CreateThemeDto): Promise<PhrasesInterface> {
+    return this.phrasesService.createTheme(payload);
   }
 
   @UseGuards(LooseFirebaseAuthGuard)

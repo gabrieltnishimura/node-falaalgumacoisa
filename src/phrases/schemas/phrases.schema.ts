@@ -7,6 +7,7 @@ export const PhrasesSchema = new mongoose.Schema({
     unique: true,
   },
   cover: String,
+  suggested: Boolean,
   phrases: [
     new mongoose.Schema({
       text: String,
