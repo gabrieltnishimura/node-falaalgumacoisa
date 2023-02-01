@@ -31,7 +31,7 @@
     "firebase-admin": "^9.0.0",
     "mockingoose": "^2.13.2",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.9.15",
+    "mongoose": "^5.13.15",
     "piii": "^4.0.2",
     "piii-filters": "^1.0.0",
     "reflect-metadata": "^0.1.13",
